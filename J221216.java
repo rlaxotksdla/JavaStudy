@@ -1,5 +1,5 @@
 import java.io.IOException;
-
+import java.util.Scanner;
 public class J221216 {
 
 	public static void main(String[] args)  {//인풋 아웃풋에서 오류 발생시 예외처리
@@ -11,7 +11,10 @@ public class J221216 {
 		catch (IOException e) {
 			System.out.println("예외가 발생하였습니다.");
 		}
+
 		//메인 메소드로 넘겨진 예외처리를 try catch를 해주거나 forWholeExamples처럼 throws IOException을 메소드에도 사용해줘야함
+		scannerExample(); //scanner 이용한 입력값 받기 
+		scannerDIY();  //Try catch 혹은 IOException 사용 없이 짜본 코드
 }
 
 	public static void forWhileExamples() throws IOException { //인풋 아웃풋에서 오류 발생시 예외처리를 main 메소드에 넘김
@@ -111,18 +114,11 @@ public class J221216 {
 			break;
 	}
 	}
-}
 
 
-/*
 
-package chap04;
 
-import java.util.Scanner;
-
-public class doWhile {
-
-	public static void main(String[] args) {
+public static void scannerExample() {
 		System.out.println("메세지를 입력하세요");
 		System.out.println("종료하려면 q를 입력하세요");
 		
@@ -136,21 +132,10 @@ public class doWhile {
         while(!inputString.equals("q"));
         System.out.println();
         System.out.println("프로그램이 종료되었습니다.");
-
-	}
-
 }
 
-package chap04;
 
-import java.util.Scanner;
-
-
-//6나올때까지 주사위 굴리기
-public class breakExample {
-
-	public static void main(String[] args) {
-
+public static void scannerDIY() {
 		System.out.println("최대숫자를 입력하세요");
 //		int maxString=(int)System.in.read(); System.in.read()는 입력값을 byte로 받아 출력하므로 scanner를 사용
 		Scanner maxNum=new Scanner(System.in);
@@ -198,8 +183,5 @@ public class breakExample {
 		}
 		}
 		
-		    
-	}
 }
-
-*/
+}
