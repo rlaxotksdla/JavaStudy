@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 public class J221219 {
 
@@ -24,7 +25,6 @@ public class J221219 {
 			for(int i : oldIntArray) {
 				System.out.println(i);
 			}
-			
 			for (int i = 0; i < oldIntArray.length; i++) {
 				newIntArray[i]=oldIntArray[i];
 			}
