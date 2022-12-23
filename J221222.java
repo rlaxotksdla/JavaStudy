@@ -35,10 +35,8 @@ public class J221222 {
 	 child.superPrintResult(); //super를 이용해 자식클래스에서 부모 변수나 메소드에 접근가능
 	 child.superSameValueName(); 
 	 System.out.println(child.sameValueName); //부모 클래스와 같은 이름의 변수가 있다면 상속제외가 되어 자식클래스의 값이 적용됨
-
 	
 
-	  
 	}
 
 }
