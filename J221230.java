@@ -7,11 +7,7 @@ import java.util.StringTokenizer;
 
 public class J221230 {
 
-		
-//		enum
-//		toString
-//		equals
-//		obj clone
+	
 	
 	/*
 	 * 백준 1929 문제 
