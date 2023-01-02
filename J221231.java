@@ -29,7 +29,7 @@ public class J221231 extends Object { //모든 클래스는 작성하지않아�
         System.out.println(lime1.toString()); //새로 오버라이딩한 인스턴스 내 name 변수 값 + 해시코드를 리턴하게 함
         System.out.println(lime2.toString()); //새로 오버라이딩한 인스턴스 내 name 변수 값 + 해시코드를 리턴하게 함
         
-       
+  
 		
 	}
 	
