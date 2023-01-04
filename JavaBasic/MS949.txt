@@ -1,0 +1,3 @@
+Eclipse 콘솔창의 한글 출력이 깨질경우
+MS949
+run config
