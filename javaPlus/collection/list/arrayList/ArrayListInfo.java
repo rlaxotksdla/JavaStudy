@@ -5,7 +5,6 @@
 
 package javaPlus.collection.list.arrayList;
 
-import java.lang.reflect.Field;
 import java.util.*;
 
 public class ArrayListPlus{
@@ -48,6 +47,28 @@ public class ArrayListPlus{
 
 		arrayList5.add(null);
 		System.out.println(arrayList5);
+		
+		// clone 을 통해 깊은 복사 가능
+		ArrayList<Integer> arrayList6 = (ArrayList<Integer>) arrayList5.clone();
+
+		arrayList6.add(5);
+		arrayList6.add(4);
+		arrayList6.add(3);
+		arrayList6.add(2);
+		arrayList6.add(1);
+		arrayList6.add(100);
+		
+		// removeall을 통해 다른 배열의 값과 같은 값을 전부 제거 가능
+		arrayList6.removeAll(arrayList5);
+		
+		//contains로 해당 값과 같은 값이 존재하는지 확인 가능
+		arrayList6.contains(arrayList5.get(0));
+		
+		Iterator itr = arrayList6.iterator();
+		
+		itr.hasNext(); // 다음 값이 존재하는지 확인
+		itr.next(); // 다음 값 반환; 
+		itr.remove(); // next()에서 불러온 값 제거
 
 
 	}

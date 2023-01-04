@@ -5,11 +5,14 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.settings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaBasic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaPlus" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaPlus/collection" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/javaPlus/collection/list" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/javaPlus/collection/map" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/javaPlus/collection/set" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/javaPlus/collection/list/arrayList" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/JavaBasic" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
