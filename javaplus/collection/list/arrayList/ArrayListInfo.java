@@ -3,9 +3,13 @@
  * Date 23.01.04
  */
 
-package javaPlus.collection.list.arrayList;
+package javaplus.collection.list.arrayList;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
 
 public class ArrayListInfo{
 	
