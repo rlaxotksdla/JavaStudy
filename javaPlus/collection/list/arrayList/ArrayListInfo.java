@@ -7,7 +7,7 @@ package javaPlus.collection.list.arrayList;
 
 import java.util.*;
 
-public class ArrayListPlus{
+public class ArrayListInfo{
 	
 	public static void main(String[] args) throws Exception {
 		/*

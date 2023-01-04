@@ -10,7 +10,7 @@ import java.util.*;
 
 public class ArrayListCompletion {
     public static void main(String[] args) {
-        StoreManageMent.
+        StoreManageMent.addStore("김태산","서울");
 
     }
 }
