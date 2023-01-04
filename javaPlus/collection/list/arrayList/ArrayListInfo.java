@@ -63,7 +63,8 @@ public class ArrayListPlus{
 		
 		//contains로 해당 값과 같은 값이 존재하는지 확인 가능
 		arrayList6.contains(arrayList5.get(0));
-		
+
+		//단순 출력을 위해서는 반복문을 사용해도 되고 오히려 더 빠르지만 Iterator를 통해서는 Collection의 List,Hash,Queue,Map 을 전부다 처리할 수 있는 장점이 있다.
 		Iterator itr = arrayList6.iterator();
 		
 		itr.hasNext(); // 다음 값이 존재하는지 확인
