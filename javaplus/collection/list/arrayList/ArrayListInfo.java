@@ -1,5 +1,5 @@
 /*
- * Class ArrayListPlus
+ * Class ArrayListInfo
  * Date 23.01.04
  */
 
