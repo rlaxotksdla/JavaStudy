@@ -8,3 +8,10 @@
 /ThreadForSync1.class
 /StaticSyncMethod.class
 /ThreadForSync2.class
+/NonStaticSyncField.class
+/StaticSyncField.class
+/ThreadForSync3.class
+/ThreadForSync5.class
+/ThreadForSync4.class
+/ExecuteExample.class
+/ExecuteExample$1.class
