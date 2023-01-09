@@ -1,0 +1,3 @@
+Set에는 HashSet과 LinkedHashSet, TreeSet이 있다
+Set은 집합의 특성을 지니며 인덱스로 관리하지 않기에 List처럼 인덱스 관련 메소드가 없다.
+또한 데이터 추가시 HashCode를 비교하여 중복값은 추가하지 않는 특성이 있다.

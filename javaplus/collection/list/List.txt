@@ -1,1 +1,6 @@
 List는 배열과 비슷하지만 List가 배열보다 편리한 메소드를 많이 가지고 있고 배열의 크기가 동적으로 변한다.
+
+ArrayList와 LinkedArrayList는 기능은 동일하지만 실제로 작동하는 방식에 차이가 크다
+간단하게 정리하자면 배열의 값 탐색에는 ArrayList가 빠르고 배열의 데이터 삽입 및 삭제에는 LinkedArrayList가 빠르다
+LinkedArrayList는 단방향 탐색밖에 안되는데 양방향 탐색이 되도록 값마다 선행 후행 노드를 가리키는 값을 모두 가지고 있는 DoublyLinkedList가 있다.
+물론 메모리를 더 사용하는 단점도 존재한다.
