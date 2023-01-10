@@ -30,6 +30,7 @@ public class ArrayListInfo{
 		String str2 = arrayList2.get(0);
 		
 		//초기 값 할당 가능
+		List<String> arrayList_3 =  Arrays.asList("A", "B", "C"); // 이렇게 할당하면 주소값을 참조하기 때문에 값추가가 안됨
 		ArrayList<String> arrayList3 = new ArrayList<String>(Arrays.asList("A", "B", "C"));
 		ArrayList<String> arrayList4 = new ArrayList<String>(List.of("A", "B", "C"));
 
