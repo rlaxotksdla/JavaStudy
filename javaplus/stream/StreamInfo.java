@@ -31,7 +31,7 @@ import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class StreamInfo {
-
+	
 	public static void main(String[] args) throws IOException {
 		
 		//배열로 생성1
@@ -133,7 +133,9 @@ public class StreamInfo {
 			List<List<String>> overlaplist = Arrays.asList(Arrays.asList("a"), Arrays.asList("b"));
 			List<String> flatList = overlaplist.stream().flatMap(Collection::stream).collect(Collectors.toList()); // [a, b]
 		//위에 생성했던 products 활용
-			Stream<String> flatproductName = products.stream().flatMap(product -> Stream.<String>builder().add(product.getName() + " : " + product.getPrice()).build());
+			Stream<String> flatproductName = products.stream()
+											.flatMap(product -> Stream.<String>builder().add(product.getName() + " : " + product.getPrice())
+											.build());
 		
 		//정렬 Stream<T> sorted(); , Stream<T> sorted(Comparator<? super T> comparator);
 		IntStream.of(14, 11, 20, 39, 23).sorted().forEach(t -> System.out.println(t));
@@ -162,9 +164,9 @@ public class StreamInfo {
 				.parallel()
 				.reduce(10, 
 						Integer::sum, 
-						//combiner는 identity와 accmululator의 결과값을 각각 인자로 받아 작동함, 순서가 중요한 작업은 하면 안됨
+						//combiner는 identity와 accmululator의 결과값을 각각 인자로 받아 작동함, 병렬 처리는 뒤에서부터 짝지어서 처리됨 순서가 중요한 작업은 신경써서 사용해야함
 						(a, b) -> {System.out.println("combiner called!  " + "a : " + a + ", b : " + b);
-						return a + b;});
+						return a - b;});
 		
 		//Collectors.toList() Stream 작업 결과를 List로 반환
 		List<String> productNames = products.stream().map(Product::getName).collect(Collectors.toList());
@@ -176,7 +178,7 @@ public class StreamInfo {
 		//joining(delimiter, prefix, suffix)
 			String joinedproductName2 = products.stream().map(Product::getName).collect(Collectors.joining(", ", "<",">"));
 		
-		//Collectors.averageingInt()
+		//Collectors.averagingInt()
 			Double avgPrice = products.stream().collect(Collectors.averagingInt(Product::getPrice));
 			
 		//Collectors.summingInt()

@@ -1,0 +1,1 @@
+ABCD타입별로 오버로딩메소드로 저장해주는 FileWriterCD
