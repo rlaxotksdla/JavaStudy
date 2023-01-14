@@ -1,0 +1,1 @@
+FileCopyTest를 위해 만든 Original txt 파일입니다.

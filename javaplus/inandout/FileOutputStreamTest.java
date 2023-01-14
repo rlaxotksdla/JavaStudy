@@ -10,6 +10,8 @@ import java.io.FileOutputStream;
 public class FileOutputStreamTest {
 
 	public static void main(String[] args) {
+
+		String path = System.getProperty("user.dir") + "/javaplus/inandout/";
 		
 		byte[] bs = new byte[26];
 		for( int i = 65; i < 65 + bs.length; i++) {
@@ -17,7 +19,7 @@ public class FileOutputStreamTest {
 		}
 		
 		//바이트 단위로 입력됨
-		try (FileOutputStream fos = new FileOutputStream("C:/Users/user/git/JavaStudy/javaplus/inandout/FileOutput.txt")) {
+		try (FileOutputStream fos = new FileOutputStream(path + "FileOutput.txt")) {
 			fos.write(bs);
 		} catch (Exception e) {
 			System.out.println(e);

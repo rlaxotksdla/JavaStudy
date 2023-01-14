@@ -5,3 +5,8 @@
 /FileOutputStreamTest.class
 /FileWriterTest.class
 /InputStreamReaderTest.class
+/FileCopyTest.class
+/DataInOutStreamTest.class
+/SerializationTest.class
+/Person.class
+/RandomAccessFileTest.class

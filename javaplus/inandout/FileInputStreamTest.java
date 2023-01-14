@@ -11,8 +11,10 @@ public class FileInputStreamTest {
 
 	public static void main(String[] args) {
 		
+		String path = System.getProperty("user.dir") + "/javaplus/inandout/";
+		
 		//FileInputStream 바이트로 읽어옴
-		try (FileInputStream fis = new FileInputStream("C:/Users/user/git/JavaStudy/javaplus/inandout/FileInput.txt")){
+		try (FileInputStream fis = new FileInputStream(path + "FileInput.txt")){
 			int i = 0;
 			
 			//파일 끝에 도달하면 -1 반환함
@@ -25,7 +27,7 @@ public class FileInputStreamTest {
 		} 
 		
 		//특정 바이트 수 단위로 읽는 법
-		try (FileInputStream fis = new FileInputStream("C:/Users/user/git/JavaStudy/javaplus/inandout/FileInput.txt")){
+		try (FileInputStream fis = new FileInputStream(path + "FileInput.txt")){
 			int j = 0;
 			byte[] bs = new byte[10];
 			

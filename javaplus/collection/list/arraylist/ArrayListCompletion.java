@@ -9,7 +9,7 @@
  * 자주 사용하는 기능은 Function 클래스를 만들어 간략화하였다.
  */
 
-package javaplus.collection.list.arrayList;
+package javaplus.collection.list.arraylist;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -154,6 +154,7 @@ public class ArrayListCompletion {
                 	case 1:
                 		Function.printList(selectedStore.members);
                 		Thread.sleep(1000);
+                		restart(args);
                 		break;
                 	case 2:
                 		Function.print("추가할 고객명을 입력해주세요.");

@@ -11,8 +11,10 @@ import java.io.IOException;
 public class FileWriterTest {
 
 	public static void main(String[] args) {
+
+		String path = System.getProperty("user.dir") + "/javaplus/inandout/";
 		
-	    try (FileWriter fw = new FileWriter("C:/Users/user/git/JavaStudy/javaplus/inandout/FileWriter.txt")) {
+	    try (FileWriter fw = new FileWriter(path + "FileWriter.txt")) {
 			fw.write("A");
 			char[] bcd = {'B', 'C', 'D'};
 			fw.write(bcd);
